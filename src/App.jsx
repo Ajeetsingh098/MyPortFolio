@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="min-h-screen bg-[#1a1a1a] selection:bg-blue-600 selection:text-white">
       <Navbar />
+      <div className="h-20 md:hidden"></div>
       <Hero />
       <Contact></Contact>
     </div>
