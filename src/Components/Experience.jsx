@@ -15,7 +15,7 @@ const Experience = () => {
     },
     {
       company: "Indian Railway",
-      role: "Summer Intern (Signal & Telecommunication)",
+      role: "Summer Intern (Signal & Telecomm)",
       period: "June 2025 – August 2025",
       location: "Gorakhpur, UP",
       description: "Worked within the Signal & Telecommunication (S&T) department. Gained hands-on experience in auditing interlocking systems and understanding railway signaling infrastructure.",
@@ -49,7 +49,7 @@ const Experience = () => {
             transition={{ delay: 0.2 }}
             className="text-4xl md:text-6xl font-black tracking-tighter"
           >
-            Professional <span className="text-blue-600">Journey</span>
+             <span className="text-blue-600">Professional Journey</span>
           </motion.h2>
         </div>
 
