@@ -60,11 +60,9 @@ const Hero = () => {
                             Hire Me <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                         </button>
 
-                        {/* <button className="px-10 py-3 cursor-pointer font-bold text-gray-300 border border-gray-800 rounded-xl hover:bg-white hover:text-black hover:border-white transition-all">
-              Download CV
-            </button> */}
+    
 
-                        {/* Replace your existing button with this <a> tag */}
+                        {/**/}
                         <a
                             href="/Ajeet_Singh_CV.pdf"
                             download="Ajeet_Singh_CV_MJPRU.pdf"
