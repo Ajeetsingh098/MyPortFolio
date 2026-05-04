@@ -16,11 +16,6 @@ const Contact = () => {
     const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
     const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-
-    // const SERVICE_ID = "Singh@098"; 
-    // const TEMPLATE_ID = "template_wjuhoya";
-    // const PUBLIC_KEY = "V-KYWTymZnCFp64F4";
-
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
       .then((result) => {
           console.log(result.text);
