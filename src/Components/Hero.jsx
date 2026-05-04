@@ -109,10 +109,12 @@ const Hero = () => {
 
                         {/* Social Floating Bar */}
                         <div className="absolute -right-2 top-1/2 -translate-y-1/2 flex-col gap-6 p-4 bg-[#1a1a1a]/80 backdrop-blur-xl border border-white/5 rounded-2xl z-20 hidden md:flex shadow-xl">
-                            <a href="#" className="text-gray-500 hover:text-blue-500 transition-colors cursor-pointer"><Linkedin size={22} /></a>
-                            <a href="#" className="text-gray-500 hover:text-pink-500 transition-colors cursor-pointer"><Instagram size={22} /></a>
-                            <a href="#" className="text-gray-500 hover:text-red-400 transition-colors cursor-pointer"><Mail size={22} /></a>
-                            <a href="#" className="text-gray-500 hover:text-green-500 transition-colors cursor-pointer"><Phone size={22} /></a>
+                            <a href="https://www.linkedin.com/in/ajeet-singh-24399325b" target="_blank"
+                                rel="noreferrer" className="text-gray-500 hover:text-blue-500 transition-colors cursor-pointer"><Linkedin size={22} /></a>
+                            <a href="https://www.instagram.com/ajeetsingh0406" target="_blank"
+                                rel="noreferrer" className="text-gray-500 hover:text-pink-500 transition-colors cursor-pointer"><Instagram size={22} /></a>
+                            <a href="mailto:ajeetsingh.ece06@gmail.com" className="text-gray-500 hover:text-red-400 transition-colors cursor-pointer"><Mail size={22} /></a>
+                            <a href="tel:+916306343402" className="text-gray-500 hover:text-green-500 transition-colors cursor-pointer"><Phone size={22} /></a>
                         </div>
                     </div>
                 </motion.div>
