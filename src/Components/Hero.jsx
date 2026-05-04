@@ -56,11 +56,11 @@ const Hero = () => {
                         className="flex flex-col sm:flex-row justify-center gap-5 lg:justify-start"
                     >
 
-                        <button className="group px-10 cursor-pointer py-3 font-bold text-white bg-blue-600 rounded-xl hover:bg-blue-700 transition-all flex items-center justify-center gap-2 shadow-[0_10px_30px_rgba(37,99,235,0.2)]">
+                        <a href='mailto:ajeetsingh.ece06@gmail.com' className="group px-10 cursor-pointer py-3 font-bold text-white bg-blue-600 rounded-xl hover:bg-blue-700 transition-all flex items-center justify-center gap-2 shadow-[0_10px_30px_rgba(37,99,235,0.2)]">
                             Hire Me <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-                        </button>
+                        </a>
 
-    
+
 
                         {/**/}
                         <a
