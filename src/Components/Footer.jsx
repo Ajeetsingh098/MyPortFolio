@@ -62,15 +62,17 @@ const Footer = () => {
           </p>
 
           <div className="flex gap-6">
-            <a href="https://www.linkedin.com/in/ajeet-singh-24399325b" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-blue-500 transition-colors">
+            <a href="https://www.linkedin.com/in/ajeet-singh-24399325b" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-blue-500 transition-colors cursor-pointer">
               <Linkedin size={18} />
             </a>
-            <a href="https://www.instagram.com/ajeetsingh0406" className="text-gray-500 hover:text-pink-500 transition-colors">
+            <a href="https://www.instagram.com/ajeetsingh0406" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-pink-500 transition-colors cursor-pointer">
               <Instagram size={18} />
             </a>
-            <a href="mailto:ajeetsingh.ece06@gmail.com" className="text-gray-500 hover:text-red-400 transition-colors">
+            <a href="mailto:ajeetsingh.ece06@gmail.com" className="text-gray-500 hover:text-red-400 transition-colors cursor-pointer">
               <Mail size={18} />
             </a>
+            <a href="tel:+916306343402" className="text-gray-500 hover:text-green-500 transition-colors cursor-pointer">
+            <Phone size={18} /></a>
           </div>
         </div>
       </div>
