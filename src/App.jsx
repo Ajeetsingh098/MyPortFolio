@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from './Components/Navbar';
 import Hero from './Components/Hero';
 import Contact from './Components/Contact';
+import Footer from './Components/Footer';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <div className="h-20 md:hidden"></div>
       <Hero />
       <Contact></Contact>
+      <Footer />
     </div>
   );
 }

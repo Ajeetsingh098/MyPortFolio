@@ -165,7 +165,7 @@ const Contact = () => {
               <button 
                 type="submit"
                 disabled={isSending}
-                className="w-full py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl flex items-center justify-center gap-3 transition-all shadow-lg shadow-blue-900/20 group disabled:bg-gray-600"
+                className="w-full py-4 cursor-pointer bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl flex items-center justify-center gap-3 transition-all shadow-lg shadow-blue-900/20 group disabled:bg-gray-600"
               >
                 {isSending ? "Sending..." : "Send Message"} 
                 <Send size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
