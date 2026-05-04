@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Favpic from '../assets/Favpic.jpg';
+import Favpic from '../assets/FavPic.jpg';
 
 
 import { Linkedin, Instagram, Mail, Phone, ArrowRight, Briefcase, Zap, Shield } from 'lucide-react';
