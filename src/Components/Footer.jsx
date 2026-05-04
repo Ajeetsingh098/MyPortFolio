@@ -65,7 +65,7 @@ const Footer = () => {
             <a href="https://www.linkedin.com/in/ajeet-singh-24399325b" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-blue-500 transition-colors">
               <Linkedin size={18} />
             </a>
-            <a href="#" className="text-gray-500 hover:text-pink-500 transition-colors">
+            <a href="https://www.instagram.com/ajeetsingh0406" className="text-gray-500 hover:text-pink-500 transition-colors">
               <Instagram size={18} />
             </a>
             <a href="mailto:ajeetsingh.ece06@gmail.com" className="text-gray-500 hover:text-red-400 transition-colors">
