@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar';
 import Hero from './Components/Hero';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
+import Experience from './Components/Experience';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <div className="h-20 md:hidden"></div>
       <Hero />
+      <Experience></Experience>
       <Contact></Contact>
       <Footer />
     </div>
