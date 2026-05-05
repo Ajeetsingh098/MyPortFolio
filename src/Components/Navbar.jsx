@@ -8,7 +8,7 @@ const Navbar = () => {
 
   
   const navLinks = [
-    { name: 'Home', href: '#home' },
+    { name: 'Home', href: '#hero' },
     { name: 'About', href: '#about' },
     { name: 'Experience', href: '#experience' },
     { name: 'Resume', href: '/Ajeet_Singh_CV.pdf', isResume: true }, 
