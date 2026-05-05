@@ -9,10 +9,12 @@ const About = () => {
     { name: "Solar PV Design", category: "Core" },
     { name: "AutoCAD Layouts (SLD)", category: "Technical" },
     { name: "Project Management", category: "Soft Skill" },
-    { name: "Industrial Automation", category: "Technical" },
-    { name: "Railway Signaling", category: "Core" },
-    { name: "MATLAB/Simulink", category: "Technical" }
+    { name: "Industrial Automation (Scada)", category: "Technical" },
+    { name: "PVsyst", category: "Technical" },
+    { name: "MS Excel", category: "Technical" }
   ];
+
+  
 
   const projects = [
     {
