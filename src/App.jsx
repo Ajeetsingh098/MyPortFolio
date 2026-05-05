@@ -14,7 +14,7 @@ function App() {
       <div className="bg-[#0a0a0a] min-h-screen">
         <Navbar />
         
-        <main className="pt-20"> 
+        <main className="pt-2"> 
           <Routes>
             {/* Home Page:  */}
             <Route path="/" element={<Hero />} />
