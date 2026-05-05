@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { GraduationCap, Wrench, MapPin, Home, Layout, BookText, User } from 'lucide-react';
+import { GraduationCap, Wrench, Layout, User, Zap, CheckCircle2, MapPin, Home } from 'lucide-react';
 
 const About = () => {
   const [activeTab, setActiveTab] = useState('bio');
 
   const skills = [
     { name: "Solar PV Design", category: "Core" },
-    { name: "AutoCAD Layouts(SLD)", category: "Technical" },
+    { name: "AutoCAD Layouts (SLD)", category: "Technical" },
     { name: "Project Management", category: "Soft Skill" },
-    { name: "Industrial Automation", category: "Technical" }
+    { name: "Industrial Automation", category: "Technical" },
+    { name: "Railway Signaling", category: "Core" },
+    { name: "MATLAB/Simulink", category: "Technical" }
   ];
 
-  
   const projects = [
     {
       title: "Solar PV Site Layout",
@@ -37,7 +38,7 @@ const About = () => {
             {[
               { id: 'bio', label: 'My Bio', icon: <User size={16} /> },
               { id: 'projects', label: 'Projects', icon: <Layout size={16} /> },
-              { id: 'blogs', label: 'Blogs', icon: <BookText size={16} /> }
+              { id: 'skills', label: 'Skills', icon: <Zap size={16} /> }
             ].map((tab) => (
               <button
                 key={tab.id}
@@ -60,40 +61,43 @@ const About = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
-              className="grid grid-cols-1 lg:grid-cols-12 gap-12"
+              className="max-w-4xl mx-auto space-y-12"
             >
-              <div className="lg:col-span-7 space-y-8">
-                <h2 className="text-4xl font-black tracking-tighter">
+              <div className="space-y-6 text-center md:text-left">
+                <h2 className="text-4xl md:text-5xl font-black tracking-tighter">
                   <span className="text-blue-600">I'm Ajeet Singh</span>
                 </h2>
                 <p className="text-gray-400 text-lg leading-relaxed font-light">
-                  Originally from Droria,UP-274404 and currently working as a 
-                  Project Engineer at Rayax Energy in Gurugram. I am finishing 
-                  my ECE degree at MJPRU Bareilly with a focus on smart infrastructure 
-                  and renewalble energy.
+                  I'm from Deoria, UP and currently working as a 
+                  <span className="text-white"> Project Engineer at Rayax Energy</span> in Gurugram. 
+                  I am a final-year ECE student at <span className="text-blue-500">MJPRU Bareilly</span>, 
+                  passionate about smart infrastructure and renewable energy systems.
                 </p>
-                <br />
-                <div className="bg-white/5 border border-white/10 p-6 rounded-3xl">
-                  <h3 className="text-white font-bold mb-4 flex items-center gap-2">
-                    <GraduationCap className="text-blue-500" /> Education
-                  </h3>
-                  <p className="text-sm text-gray-300 font-semibold">B.Tech in Electronics & Communication</p>
-                  <p className="text-xs text-gray-500 mt-1">M.J.P. Rohilkhand University Bareilly | 2022 - 2026</p>
-                  <p className="text-blue-400 text-xs font-bold mt-2">CGPA: 8.0/10.0</p>
+                
+                {/* Quick Info Tags */}
+                <div className="flex flex-wrap gap-4 justify-center md:justify-start pt-4">
+                   <div className="flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full text-xs text-gray-400">
+                      <Home size={14} className="text-blue-500" /> Deoria, UP
+                   </div>
+                   <div className="flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full text-xs text-gray-400">
+                      <MapPin size={14} className="text-blue-500" /> Gurugram, Haryana
+                   </div>
                 </div>
               </div>
 
-              <div className="lg:col-span-5 space-y-6">
-                <div className="p-6 bg-white/5 border border-white/10 rounded-3xl">
-                  <h3 className="text-white font-bold mb-6 flex items-center gap-2">
-                    <Wrench className="text-blue-500" /> Skills
-                  </h3>
-                  <div className="flex flex-wrap gap-2">
-                    {skills.map((s, i) => (
-                      <span key={i} className="px-4 py-2 bg-[#121212] border border-white/5 rounded-xl text-xs text-gray-400">
-                        {s.name}
-                      </span>
-                    ))}
+              <div className="bg-white/5 border border-white/10 p-8 rounded-3xl relative overflow-hidden group">
+                <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity">
+                  <GraduationCap size={120} />
+                </div>
+                <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
+                  <GraduationCap className="text-blue-500" /> Academic Background
+                </h3>
+                <div className="space-y-2">
+                  <p className="text-lg text-gray-200 font-semibold">B.Tech in Electronics & Communication</p>
+                  <p className="text-blue-400 font-medium">M.J.P. Rohilkhand University Bareilly</p>
+                  <div className="flex justify-between items-center mt-4 pt-4 border-t border-white/5">
+                    <span className="text-xs text-gray-500 font-bold uppercase tracking-widest">Batch 2022 - 2026</span>
+                    <span className="text-blue-500 font-black">CGPA: 8.0/10.0</span>
                   </div>
                 </div>
               </div>
@@ -106,6 +110,7 @@ const About = () => {
               key="projects"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.95 }}
               className="grid grid-cols-1 md:grid-cols-2 gap-6"
             >
               {projects.map((p, i) => (
@@ -117,27 +122,33 @@ const About = () => {
                   <p className="text-gray-400 text-sm leading-relaxed">{p.desc}</p>
                 </div>
               ))}
-              <div className="p-8 border border-dashed border-white/10 rounded-3xl flex items-center justify-center text-gray-600">
-                Next project in progress...
+              <div className="p-8 border border-dashed border-white/10 rounded-3xl flex flex-col items-center justify-center text-gray-600 gap-2">
+                <Layout size={24} />
+                <span className="text-sm font-medium">Next project in progress...</span>
               </div>
             </motion.div>
           )}
 
-          {/* --- BLOGS TAB --- */}
-          {activeTab === 'blogs' && (
+          {/* --- SKILLS TAB */}
+          {activeTab === 'skills' && (
             <motion.div
-              key="blogs"
+              key="skills"
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
-              className="text-center py-20"
+              exit={{ opacity: 0, x: -20 }}
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
             >
-              <div className="w-20 h-20 bg-white/5 rounded-full flex items-center justify-center mx-auto mb-6">
-                <BookText className="text-gray-600" size={32} />
-              </div>
-              <h3 className="text-2xl font-bold mb-2 text-white">No Blogs Yet</h3>
-              <p className="text-gray-500 max-w-sm mx-auto">
-                I'll be sharing insights on Solar PV design and engineering trends here soon. Stay tuned!
-              </p>
+              {skills.map((s, i) => (
+                <div key={i} className="p-6 bg-white/5 border border-white/10 rounded-2xl flex items-center gap-4 group hover:bg-blue-600/5 hover:border-blue-600/50 transition-all">
+                  <div className="w-10 h-10 rounded-lg bg-blue-600/10 flex items-center justify-center border border-blue-500/20 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                    <CheckCircle2 size={18} className="text-blue-500 group-hover:text-white" />
+                  </div>
+                  <div>
+                    <p className="text-[10px] uppercase font-black text-gray-500 tracking-widest group-hover:text-blue-400">{s.category}</p>
+                    <p className="text-white font-bold">{s.name}</p>
+                  </div>
+                </div>
+              ))}
             </motion.div>
           )}
         </AnimatePresence>
