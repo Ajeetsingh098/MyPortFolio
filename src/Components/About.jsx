@@ -7,12 +7,12 @@ const About = () => {
 
   const skills = [
     { name: "Solar PV Design", category: "Core" },
-    { name: "AutoCAD Layouts", category: "Technical" },
-    { name: "Railway Signaling", category: "Core" },
+    { name: "AutoCAD Layouts(SLD)", category: "Technical" },
+    { name: "Project Management", category: "Soft Skill" },
     { name: "Industrial Automation", category: "Technical" }
   ];
 
-  // Future Projects yahan add honge
+  
   const projects = [
     {
       title: "Solar PV Site Layout",
@@ -22,7 +22,7 @@ const About = () => {
     {
       title: "Railway Signaling Audit",
       company: "N.E. Railway",
-      desc: "Hands-on experience with fail-safe interlocking logic systems during internship."
+      desc: "Hands-on experience with fail-safe interlocking logic systems and railway infrastructure design during internship."
     }
   ];
 
@@ -64,20 +64,21 @@ const About = () => {
             >
               <div className="lg:col-span-7 space-y-8">
                 <h2 className="text-4xl font-black tracking-tighter">
-                  Ajeet Singh <span className="text-blue-600">/ Engineer</span>
+                  <span className="text-blue-600">I'm Ajeet Singh</span>
                 </h2>
                 <p className="text-gray-400 text-lg leading-relaxed font-light">
-                  Originally from **Gorakhpur, UP**, and currently working as a 
-                  **Project Engineer at Rayax Energy** in Gurugram. I am finishing 
-                  my ECE degree at **MJPRU** with a focus on smart infrastructure 
-                  and clean energy.
+                  Originally from Droria,UP-274404 and currently working as a 
+                  Project Engineer at Rayax Energy in Gurugram. I am finishing 
+                  my ECE degree at MJPRU Bareilly with a focus on smart infrastructure 
+                  and renewalble energy.
                 </p>
+                <br />
                 <div className="bg-white/5 border border-white/10 p-6 rounded-3xl">
                   <h3 className="text-white font-bold mb-4 flex items-center gap-2">
                     <GraduationCap className="text-blue-500" /> Education
                   </h3>
                   <p className="text-sm text-gray-300 font-semibold">B.Tech in Electronics & Communication</p>
-                  <p className="text-xs text-gray-500 mt-1">M.J.P. Rohilkhand University | 2022 - 2026</p>
+                  <p className="text-xs text-gray-500 mt-1">M.J.P. Rohilkhand University Bareilly | 2022 - 2026</p>
                   <p className="text-blue-400 text-xs font-bold mt-2">CGPA: 8.0/10.0</p>
                 </div>
               </div>
