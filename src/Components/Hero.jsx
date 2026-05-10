@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import Favpic from '../assets/FavPic.jpg';
@@ -6,18 +5,20 @@ import { Linkedin, Instagram, Mail, Phone, Briefcase, Zap, Shield } from 'lucide
 
 const Hero = () => {
     return (
-        <section className="relative flex items-center justify-center min-h-screen px-[5%] md:px-[10%] bg-[#0a0a0a] text-white overflow-hidden font-sans">
+        <section className="relative flex items-center justify-center min-h-screen px-[5%] md:px-[10%] bg-[#0a0a0a] text-white overflow-hidden font-sans pt-20">
 
-            {/* 1. Industrial Background */}
+            {/* 1. Industrial Background Glow & Pattern */}
             <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
                 style={{ backgroundImage: 'radial-gradient(#3b82f6 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
             </div>
             <div className="absolute -top-24 -left-24 w-96 h-96 bg-blue-600/10 rounded-full blur-[120px] pointer-events-none"></div>
 
-            <div className="container relative z-10 flex flex-col items-center gap-12 mx-auto lg:flex-row lg:justify-between lg:items-center">
+            <div className="container relative z-10 flex flex-col items-center gap-12 mx-auto lg:flex-row lg:justify-between lg:items-center max-w-7xl">
 
                 {/* 2. Content Section */}
                 <div className="max-w-2xl text-center lg:text-left order-2 lg:order-1 flex flex-col items-center lg:items-start">
+                    
+                    {/* Badge */}
                     <motion.div
                         initial={{ opacity: 0, y: -10 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -29,14 +30,16 @@ const Hero = () => {
                         </p>
                     </motion.div>
 
+                    {/* Name */}
                     <motion.h1
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
-                        className="mb-6 text-6xl md:text-8xl font-black tracking-tighter"
+                        className="mb-6 text-6xl md:text-8xl font-black tracking-tighter leading-none"
                     >
                         <span className="text-blue-600">Ajeet Singh</span>
                     </motion.h1>
 
+                    {/* Description */}
                     <motion.p
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -47,27 +50,28 @@ const Hero = () => {
                         high-performance energy solutions."
                     </motion.p>
 
-                    {/* Action Buttons */}
+                    {/* Action Buttons - Fixed wrapping issue */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.4 }}
-                        className="flex flex-row flex-wrap justify-center lg:justify-start gap-4 w-full"
+                        className="flex flex-row items-center justify-center lg:justify-start gap-4 w-full"
                     >
                         <a href='mailto:ajeetsingh.ece06@gmail.com' 
-                           className="flex-1 sm:flex-none px-10 py-3 font-bold text-white bg-blue-600 rounded-xl hover:bg-blue-700 transition-all flex items-center justify-center gap-2 shadow-[0_10px_30px_rgba(37,99,235,0.2)]">
+                           className="whitespace-nowrap px-8 py-3.5 text-sm md:text-base font-bold text-white bg-blue-600 rounded-xl hover:bg-blue-700 transition-all flex items-center justify-center shadow-[0_10px_30px_rgba(37,99,235,0.2)] min-w-fit"
+                        >
                             Hire Me
                         </a>
 
                         <a href="/Ajeet_Singh_CV.pdf"
                            download="Ajeet_Singh_CV_MJPRU.pdf"
-                           className="flex-1 sm:flex-none px-10 py-3 font-bold text-gray-300 border border-gray-800 rounded-xl hover:bg-white hover:text-black hover:border-white transition-all flex items-center justify-center"
+                           className="whitespace-nowrap px-6 py-3.5 text-sm md:text-base font-bold text-gray-300 border border-gray-800 rounded-xl hover:bg-white hover:text-black hover:border-white transition-all flex items-center justify-center min-w-fit"
                         >
                             Download CV
                         </a>
                     </motion.div>
 
-                    {/* Core Values */}
+                    {/* Core Values / Features */}
                     <div className="flex flex-wrap justify-center lg:justify-start gap-8 mt-12 pt-8 border-t border-white/5 w-full">
                         <div className="flex items-center gap-2 opacity-50 hover:opacity-100 transition-opacity group">
                             <Zap size={16} className="text-blue-500 group-hover:scale-110 transition-transform" />
@@ -80,19 +84,21 @@ const Hero = () => {
                     </div>
                 </div>
 
-                {/* 3. Profile Image */}
+                {/* 3. Profile Image Section */}
                 <motion.div
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8 }}
                     className="relative order-1 lg:order-2"
                 >
-                    <div className="relative w-72 h-72 md:w-96 md:h-96 lg:w-112.5 lg:h-112.5">
-                        {/* Outer Soft Glow */}
-                        <div className="absolute inset-0 bg-blue-600/5 rounded-full blur-[60px]"></div>
+                    {/* Fixed sizes with arbitrary brackets for Tailwind */}
+                    <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-[450px] lg:h-[450px]">
+                        
+                        {/* Outer Glow Effect */}
+                        <div className="absolute inset-0 bg-blue-600/10 rounded-full blur-[80px]"></div>
 
-                        {/* Main Image Container */}
-                        <div className="absolute inset-4 rounded-full border-12 md:border-18 border-[#121212] overflow-hidden shadow-2xl z-10 bg-[#121212]">
+                        {/* Image Frame */}
+                        <div className="absolute inset-4 rounded-full border-[10px] md:border-[15px] border-[#121212] overflow-hidden shadow-2xl z-10 bg-[#121212]">
                             <img
                                 src={Favpic}
                                 alt="Ajeet Singh"
@@ -100,14 +106,16 @@ const Hero = () => {
                             />
                         </div>
 
-                        {/* Social Floating Bar */}
-                        <div className="absolute -right-4 top-1/2 -translate-y-1/2  flex-col gap-6 p-4 bg-[#1a1a1a]/80 backdrop-blur-xl border border-white/5 rounded-2xl z-20 hidden md:flex shadow-xl">
-                            <a href="https://www.linkedin.com/in/ajeet-singh-24399325b" target="_blank"
-                                rel="noreferrer" className="text-gray-500 hover:text-blue-500 transition-colors"><Linkedin size={20} /></a>
-                            <a href="https://www.instagram.com/ajeetsingh0406" target="_blank"
-                                rel="noreferrer" className="text-gray-500 hover:text-pink-500 transition-colors"><Instagram size={20} /></a>
-                            <a href="mailto:ajeetsingh.ece06@gmail.com" className="text-gray-500 hover:text-red-400 transition-colors"><Mail size={20} /></a>
-                            <a href="tel:+916306343402" className="text-gray-500 hover:text-green-500 transition-colors"><Phone size={20} /></a>
+                        {/* Floating Social Sidebar - Desktop Only */}
+                        <div className="absolute -right-6 top-1/2 -translate-y-1/2 flex flex-col gap-6 p-4 bg-[#1a1a1a]/80 backdrop-blur-xl border border-white/5 rounded-2xl z-20 hidden md:flex shadow-2xl">
+                            <a href="https://www.linkedin.com/in/ajeet-singh-24399325b" target="_blank" rel="noreferrer" 
+                               className="text-gray-500 hover:text-blue-500 transition-colors"><Linkedin size={20} /></a>
+                            <a href="https://www.instagram.com/ajeetsingh0406" target="_blank" rel="noreferrer" 
+                               className="text-gray-500 hover:text-pink-500 transition-colors"><Instagram size={20} /></a>
+                            <a href="mailto:ajeetsingh.ece06@gmail.com" 
+                               className="text-gray-500 hover:text-red-400 transition-colors"><Mail size={20} /></a>
+                            <a href="tel:+916306343402" 
+                               className="text-gray-500 hover:text-green-500 transition-colors"><Phone size={20} /></a>
                         </div>
                     </div>
                 </motion.div>
