@@ -42,7 +42,7 @@ const Hero = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.2 }}
-                        className="mb-10 text-lg md:text-xl text-gray-400 font-light leading-relaxed max-w-xl"
+                        className="mb-12 text-lg md:text-xl text-gray-400 font-light leading-relaxed max-w-xl"
                     >
                         "I lead solar PV initiatives, leveraging design workflows and IT-integrated management to deliver scalable,
                         high-performance energy solutions."
@@ -56,8 +56,8 @@ const Hero = () => {
                         className="flex flex-col sm:flex-row justify-center gap-5 lg:justify-start"
                     >
 
-                        <a href='mailto:ajeetsingh.ece06@gmail.com' className="group px-10 cursor-pointer py-3 font-bold text-white bg-blue-600 rounded-xl hover:bg-blue-700 transition-all flex items-center justify-center gap-2 shadow-[0_10px_30px_rgba(37,99,235,0.2)]">
-                            Hire Me <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                        <a href='mailto:ajeetsingh.ece06@gmail.com' className="group px-12 cursor-pointer py-3 font-bold text-white bg-blue-600 rounded-xl hover:bg-blue-700 transition-all flex items-center justify-center gap-2 shadow-[0_10px_30px_rgba(37,99,235,0.2)]">
+                            Hire Me 
                         </a>
 
 
@@ -66,7 +66,7 @@ const Hero = () => {
                         <a
                             href="/Ajeet_Singh_CV.pdf"
                             download="Ajeet_Singh_CV_MJPRU.pdf"
-                            className="px-10 py-3 cursor-pointer font-bold text-gray-300 border border-gray-800 rounded-xl hover:bg-white hover:text-black hover:border-white transition-all"
+                            className="px-12 py-3 cursor-pointer font-bold text-gray-300 border border-gray-800 rounded-xl hover:bg-white hover:text-black hover:border-white transition-all"
                         >
                             Download CV
                         </a>

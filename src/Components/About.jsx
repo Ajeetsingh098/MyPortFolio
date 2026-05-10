@@ -99,7 +99,7 @@ const About = () => {
                   <p className="text-blue-400 font-medium">M.J.P. Rohilkhand University Bareilly</p>
                   <div className="flex justify-between items-center mt-4 pt-4 border-t border-white/5">
                     <span className="text-xs text-gray-500 font-bold uppercase tracking-widest">Batch 2022 - 2026</span>
-                    <span className="text-blue-500 font-black">CGPA: 8.0/10.0</span>
+                    <span className="text-blue-500 font-black">CGPA: 8.2/10</span>
                   </div>
                 </div>
               </div>
