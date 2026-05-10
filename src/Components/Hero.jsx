@@ -7,7 +7,7 @@ const Hero = () => {
     return (
         <section className="relative flex items-center justify-center min-h-screen px-[5%] md:px-[10%] bg-[#0a0a0a] text-white overflow-hidden font-sans pt-20">
 
-            {/* 1. Industrial Background Glow & Pattern */}
+            {/* 1. Industrial Background  */}
             <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
                 style={{ backgroundImage: 'radial-gradient(#3b82f6 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
             </div>
@@ -46,8 +46,8 @@ const Hero = () => {
                         transition={{ delay: 0.2 }}
                         className="mb-10 text-lg md:text-xl text-gray-400 font-light leading-relaxed max-w-xl"
                     >
-                        "I lead solar PV initiatives, leveraging design workflows and IT-integrated management to deliver scalable,
-                        high-performance energy solutions."
+                       I design detailed solar plant layouts and also lead the entire project execution on the ground.
+                        As a Project Engineer, I turn technical drawings into real-world energy solutions.
                     </motion.p>
 
                     {/* Action Buttons -  */}
@@ -75,11 +75,11 @@ const Hero = () => {
                     <div className="flex flex-wrap justify-center lg:justify-start gap-8 mt-12 pt-8 border-t border-white/5 w-full">
                         <div className="flex items-center gap-2 opacity-50 hover:opacity-100 transition-opacity group">
                             <Zap size={16} className="text-blue-500 group-hover:scale-110 transition-transform" />
-                            <span className="text-[10px] font-bold uppercase tracking-widest">Automation</span>
+                            <span className="text-[10px] font-bold uppercase tracking-widest">ENGINEERING</span>
                         </div>
                         <div className="flex items-center gap-2 opacity-50 hover:opacity-100 transition-opacity group">
                             <Shield size={16} className="text-blue-500 group-hover:scale-110 transition-transform" />
-                            <span className="text-[10px] font-bold uppercase tracking-widest">Management</span>
+                            <span className="text-[10px] font-bold uppercase tracking-widest">EXECUTION</span>
                         </div>
                     </div>
                 </div>
