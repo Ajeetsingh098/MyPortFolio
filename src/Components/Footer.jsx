@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#0a0a0a] border-t border-white/5 pt-16 pb-8 px-[5%] md:px-[10%] relative overflow-hidden">
       
-      {/* Subtle Background Glow */}
+      {/*Background Glow */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-px bg-linear-to-r from-transparent via-blue-500/20 to-transparent"></div>
 
       <div className="container mx-auto">
