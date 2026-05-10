@@ -49,7 +49,7 @@ const Hero = () => {
                        I design detailed solar plant layouts and also lead the entire project execution on the ground.
                         As a Project Engineer, I turn technical drawings into real-world energy solutions.
                     </motion.p>
-
+                    <br />
                     {/* Action Buttons -  */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -57,11 +57,11 @@ const Hero = () => {
                         transition={{ delay: 0.4 }}
                         className="flex flex-row items-center justify-center lg:justify-start gap-4 w-full"
                     >
-                        {/* <a href='mailto:ajeetsingh.ece06@gmail.com' 
+                        <a href='mailto:ajeetsingh.ece06@gmail.com' 
                            className="whitespace-nowrap px-8 py-3.5 text-sm md:text-base font-bold text-white bg-blue-600 rounded-xl hover:bg-blue-700 transition-all flex items-center justify-center shadow-[0_10px_30px_rgba(37,99,235,0.2)] min-w-fit"
                         >
                             Hire Me
-                        </a> */}
+                        </a>
 
                         <a href="/Ajeet_Singh_CV.pdf"
                            download="Ajeet_Singh_CV_MJPRU.pdf"
@@ -69,6 +69,9 @@ const Hero = () => {
                         >
                             Download CV
                         </a>
+
+
+
                     </motion.div>
 
                     {/* Core Values / Features */}
