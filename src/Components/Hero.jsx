@@ -22,7 +22,7 @@ const Hero = () => {
                     <motion.div
                         initial={{ opacity: 0, y: -10 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="inline-flex items-center gap-2 px-4 py-1.5 mb-3 rounded-lg bg-blue-500/5 border border-blue-500/20 backdrop-blur-md"
+                        className="inline-flex items-center gap-2 px-4 py-1.5 mb-5 rounded-lg bg-blue-500/5 border border-blue-500/20 backdrop-blur-md"
                     >
                         <Briefcase size={14} className="text-blue-500" />
                         <p className="text-[10px] font-bold tracking-[0.25em] text-blue-400 uppercase">
@@ -55,7 +55,7 @@ const Hero = () => {
                         transition={{ delay: 0.4 }}
                         className="flex flex-col sm:flex-row justify-center gap-5 lg:justify-start"
                     >
-                        <span>  <a href='mailto:ajeetsingh.ece06@gmail.com' className="group px-12 cursor-pointer py-1.5 font-bold text-white bg-blue-600 rounded-xl hover:bg-blue-700 transition-all flex items-center justify-center gap-2 shadow-[0_10px_30px_rgba(37,99,235,0.2)]">
+                        <span>  <a href='mailto:ajeetsingh.ece06@gmail.com' className="group px-12 cursor-pointer py-1 font-bold text-white bg-blue-600 rounded-xl hover:bg-blue-700 transition-all flex items-center justify-center gap-2 shadow-[0_10px_30px_rgba(37,99,235,0.2)]">
                             Hire Me
                         </a> </span>
 
@@ -66,7 +66,7 @@ const Hero = () => {
                         <span>  <a
                             href="/Ajeet_Singh_CV.pdf"
                             download="Ajeet_Singh_CV_MJPRU.pdf"
-                            className="px-12 py-1.5 cursor-pointer font-bold text-gray-300 border border-gray-800 rounded-xl hover:bg-white hover:text-black hover:border-white transition-all"
+                            className="px-12 py-1 cursor-pointer font-bold text-gray-300 border border-gray-800 rounded-xl hover:bg-white hover:text-black hover:border-white transition-all"
                         >
                             Download CV
                         </a>   </span>
