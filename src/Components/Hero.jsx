@@ -50,18 +50,18 @@ const Hero = () => {
                         high-performance energy solutions."
                     </motion.p>
 
-                    {/* Action Buttons - Fixed wrapping issue */}
+                    {/* Action Buttons -  */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.4 }}
                         className="flex flex-row items-center justify-center lg:justify-start gap-4 w-full"
                     >
-                        <a href='mailto:ajeetsingh.ece06@gmail.com' 
+                        {/* <a href='mailto:ajeetsingh.ece06@gmail.com' 
                            className="whitespace-nowrap px-8 py-3.5 text-sm md:text-base font-bold text-white bg-blue-600 rounded-xl hover:bg-blue-700 transition-all flex items-center justify-center shadow-[0_10px_30px_rgba(37,99,235,0.2)] min-w-fit"
                         >
                             Hire Me
-                        </a>
+                        </a> */}
 
                         <a href="/Ajeet_Singh_CV.pdf"
                            download="Ajeet_Singh_CV_MJPRU.pdf"
@@ -91,7 +91,7 @@ const Hero = () => {
                     transition={{ duration: 0.8 }}
                     className="relative order-1 lg:order-2"
                 >
-                    {/* Fixed sizes with arbitrary brackets for Tailwind */}
+                    {/* Fixed */}
                     <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-[450px] lg:h-[450px]">
                         
                         {/* Outer Glow Effect */}
@@ -106,8 +106,8 @@ const Hero = () => {
                             />
                         </div>
 
-                        {/* Floating Social Sidebar - Desktop Only */}
-                        <div className="absolute -right-6 top-1/2 -translate-y-1/2 flex flex-col gap-6 p-4 bg-[#1a1a1a]/80 backdrop-blur-xl border border-white/5 rounded-2xl z-20 hidden md:flex shadow-2xl">
+                        {/* Floating Social Sidebar */}
+                        <div className="absolute -right-6 top-1/2 -translate-y-1/2 flex-col gap-6 p-4 bg-[#1a1a1a]/80 backdrop-blur-xl border border-white/5 rounded-2xl z-20 hidden md:flex shadow-2xl">
                             <a href="https://www.linkedin.com/in/ajeet-singh-24399325b" target="_blank" rel="noreferrer" 
                                className="text-gray-500 hover:text-blue-500 transition-colors"><Linkedin size={20} /></a>
                             <a href="https://www.instagram.com/ajeetsingh0406" target="_blank" rel="noreferrer" 
